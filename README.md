@@ -5,8 +5,7 @@ This is very useful when stitching images together at a later date than when the
 an image file with one of the original timestamps in the name (like Microsoft ICE does by default), but assigns the creation date
 to the current date.
 
-Works with any timestamped file that contains YYYYmmdd_HHMMSS inside the filename (essentially 14 digits long.)
-eg:
+Works with any timestamped file that contains YYYYmmdd_HHMMSS inside the filename (essentially 14 digits long), ie:
 ```
 PXL_20201005_180522322_stitch.png -> 2020-10-05 18:05:22
 ```
@@ -17,8 +16,6 @@ If the timestamp contains more than 1 but less than 14 digits, it will concatena
 This can lead to some dates that don't make sense, so year/month/date default to 1991/01/01 if year/month/date falls below those values.
 
 A timestamp may also be separated by 0 or more underscores: 
-
-eg:
 ```
 2020_01_01_16_50_02 -> 2020-01-01 16:50:02
 20200101165002      -> 2020-01-01 16:50:02
