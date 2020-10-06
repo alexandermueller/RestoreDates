@@ -2,7 +2,7 @@
 Restore timestamp data to any image file with a partial or full timestamp in its name (using said timestamp.)
 
 This is very useful when stitching images together at a later date than when the images were taken, which would (usually) create
-an image file with one of the original timestamps in the name (like Microsoft ICE does by default), but assigned the creation date
+an image file with one of the original timestamps in the name (like Microsoft ICE does by default), but assigns the creation date
 to the current date.
 
 Works with any timestamped file that contains YYYYmmdd_HHMMSS inside the filename (essentially 14 digits long.)
