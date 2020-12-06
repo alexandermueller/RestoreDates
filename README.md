@@ -27,7 +27,7 @@ A timestamp may also be separated by 0 or more underscores:
 Restore timestamp data to any stitched file in a directory without a timestamp in its name.
 
 Searches the current dir for image files that haven't been stitched yet, using the first one it sees to initialize a rolling unix
-timestamp counter to the closest midnight from before that timestamp. ie:
+timestamp counter to the closest midnight from before that timestamp, ie:
 ```
 1577915402 (2020-01-01 16:50:02 EST) -> 1577854800 (2020-01-01 00:00:00 EST)
 ```
