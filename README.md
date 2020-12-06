@@ -36,5 +36,7 @@ into creating them.
 
 Next it iterates through all the image files in the current dir, updating the rolling timestamp to the current file's taken date if
 the file is a regular image file, otherwise setting the current (stitched) image file's taken date (and all other timestamps if
-possible) to the rolling timestamp's date (+1 second.) The exact timestamp is not really necessary here for me, I just wanted to 
-keep the correct ordering when exporting them into Google Photos.
+possible) to the rolling timestamp's date (after adding one second to the rolling counter, which prevents any other stitched images
+that come directly afterward from having the same times and messing up the ordering.) 
+
+The exact timestamp is not really necessary here for me, I just wanted to keep the correct ordering when exporting them into Google Photos.
