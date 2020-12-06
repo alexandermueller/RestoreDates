@@ -31,7 +31,7 @@ timestamp counter to the closest midnight from before that timestamp, ie:
 ```
 1577915402 (2020-01-01 16:50:02 EST) -> 1577854800 (2020-01-01 00:00:00 EST)
 ```
-It searches for non-stitched images first because the stitched images will have creation dates that don't match the files that went 
+It searches for non-stitched images first because the stitched images will have taken dates that don't match the files that went 
 into creating them. 
 
 Next it iterates through all the image files in the current dir, updating the rolling timestamp to the current file's taken date if
