@@ -52,8 +52,9 @@ for f in ./*stitch*.png; do
     		echo $f
     		echo "-> before: $(stat -c %y $f)" 
     		
-    		newTime="$(date -d "$(date -d "$time")+$offset hours" "+%Y%m%d%H%M.%S")"
-    		touch -m -t $newTime $f
+    		newTime=$(date -d "$(date -d "$time")+$offset hours" "+%Y:%m:%d %H:%M:%S")
+            exiftool -overwrite_original -alldates="$newTime" -filemodifydate="$newTime" -filecreatedate="$newTime" "$f" > /dev/null 2>&1
+    		#touch -m -t $newTime $f
 
     		echo "-> after:  $(stat -c %y $f)"
     		count=$[count+1]
